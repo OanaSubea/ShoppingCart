@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<br>
-{% for product in products %}
-    {{product.name}} </br>
-{% endfor %}
+<tr>
+<td width = '300px' style="border: 0px">
+    {% for category in categories %}
+        <a href = "#"> {{categories.name}}<br/></a>
+    {% endfor %}
+</td>
+
+    <br>
+    {% for product in products %}
+        <a href = "http://127.0.0.1:8000/shop/product/{{product.id}}/">{{product.name}}</a> </br>
+    {% endfor %}
+
+</tr>
 </body>
 </html>

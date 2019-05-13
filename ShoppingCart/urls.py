@@ -19,5 +19,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', include('shop.urls')),
+    path('shop/', include('shop.urls')),
+    #path('cart/', include(cart.urls)),
 ]
